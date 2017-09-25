@@ -21,7 +21,8 @@ function addToCart(item) {
 
 function viewCart() {
   if(cart.length === 1) {
-    console.log(`In your cart, you have ${Object.keys(cart[0], [0])} at $${Object.keys(cart[0], [1])}.`)
+    var str = `In your cart, you have ${Object.keys(cart[0], [0])} at $${Object.keys(cart[0], [1])}.`
+    console.log(str)
   }
 }
 
