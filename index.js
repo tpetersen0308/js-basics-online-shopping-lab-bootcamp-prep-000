@@ -58,7 +58,7 @@ function removeFromCart(item) {
     }
   }
   if (bool === false) {
-    console.log("That item is not in your cart")
+    console.log("That item is not in your cart.")
   }
   return cart
 }
