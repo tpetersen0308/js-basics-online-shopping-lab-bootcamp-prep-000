@@ -24,7 +24,7 @@ function viewCart() {
   if(cart.length === 0) {
     console.log("Your shopping cart is empty.")
   }
-  elseif(cart.length === 2) {
+  else if(cart.length === 2) {
       str = `${str} ${Object.keys(cart[0], [0])} at $${Object.keys(cart[0], [1])} and ${Object.keys(cart[1], [0])} at $${Object.keys(cart[1], [1])}.`
       console.log(str)
   }
