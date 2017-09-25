@@ -25,7 +25,7 @@ function viewCart() {
     console.log(str)
   }
   else if(cart.length === 2) {
-    
+
   }
 }
 
