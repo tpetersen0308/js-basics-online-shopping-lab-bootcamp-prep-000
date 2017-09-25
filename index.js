@@ -42,7 +42,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var tally = 0
+  for(var i = 0; i < cart.length; i++) {
+    tally = tally + parseInt(cart[i][Object.keys(cart[i])])
+  }
+  return tally
 }
 
 function removeFromCart(item) {
