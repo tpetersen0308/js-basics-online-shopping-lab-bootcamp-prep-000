@@ -31,9 +31,10 @@ function viewCart() {
   else if(cart.length != 0) {
     var str = "In your cart, you have"
     var i
-    for(i = 0; i < cart.length; i++) {
+    for(i = 0; i < (cart.length - 1); i++) {
       str = `${str} ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]},`
     }
+    i = cart.length - 1
     str = `${str} and ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`
   }
   else console.log("Your shopping cart is empty.")
