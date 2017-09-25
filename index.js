@@ -27,14 +27,15 @@ function viewCart() {
   elseif (cart.length === 2) {
       str = `${str} ${Object.keys(cart[0], [0])} at $${Object.keys(cart[0], [1])}
             and ${Object.keys(cart[1], [0])} at $${Object.keys(cart[1], [1])}.`
+      console.log(str)
   }
   else {
     for(var i = 0; i < (cart.length - 1); i++){
       str = `${str} ${Object.keys(cart[i], [0])} at $${Object.keys(cart[i], [1])} `
     }
     str = `${str} and ${Object.keys(cart[i], [0])}.`
+    console.log(str)
   }
-  console.log(str)
 }
 
 function total() {
