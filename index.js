@@ -50,7 +50,17 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var bool = false
+  for(var i = 0; i < cart.length; i++) {
+    if(cart[i].hasOwnProperty(item)) {
+      delete Object.keys(cart[i])
+      bool = true
+    }
+  }
+  if (bool === false) {    
+    console.log("That item is not in your cart")
+  }
+  return cart
 }
 
 function placeOrder(cardNumber) {
