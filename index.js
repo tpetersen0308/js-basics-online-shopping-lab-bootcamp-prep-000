@@ -53,7 +53,7 @@ function removeFromCart(item) {
   var bool = false
   for(var i = 0; i < cart.length; i++) {
     if(cart[i].hasOwnProperty(item)) {
-      delete Object.keys(cart[i])
+      cart = cart.splice(i, 1)
       bool = true
     }
   }
